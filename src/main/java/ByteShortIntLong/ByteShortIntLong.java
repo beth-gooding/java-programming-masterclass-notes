@@ -67,5 +67,17 @@ public class ByteShortIntLong {
         // Without the L on the end, IntelliJ will give us an error as it is too large to be an int
         long bigLongLiteralValue = 2147483647234L;
         System.out.println(bigLongLiteralValue);
+
+        int myTotal = (myMinIntValue / 2);
+
+        /*
+        We get an error below without casting
+        This is because the expressions in the brackets are an int because Java assumes 2 is an int
+        Casting tells us to treat the value as the type in the parenthesis
+        We can use casting because WE KNOW that these values will fit as bytes or shorts, but be careful
+        */
+        byte myNewByteValue = (byte) (myMinByteValue / 2);
+
+        short myNewShortValue = (short) (myMinShortValue / 2);
     }
 }
