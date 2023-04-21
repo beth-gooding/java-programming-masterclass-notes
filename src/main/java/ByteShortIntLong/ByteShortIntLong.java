@@ -79,5 +79,15 @@ public class ByteShortIntLong {
         byte myNewByteValue = (byte) (myMinByteValue / 2);
 
         short myNewShortValue = (short) (myMinShortValue / 2);
+
+        /*===============================================CHALLENGE===========================================*/
+
+        byte myChallengeByteValue = 14;
+        short myChallengeShortValue = 5678;
+        int myChallengeIntValue = 12345678;
+
+        // Longs work nicely with int variables, so we don't need to do any casting
+        long myChallengeLongValue = 50000L + (10L * (myChallengeByteValue + myChallengeShortValue + myChallengeIntValue));
+        System.out.println("My Challenge Long Value = " + myChallengeLongValue);
     }
 }
