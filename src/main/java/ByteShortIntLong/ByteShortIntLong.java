@@ -33,5 +33,39 @@ public class ByteShortIntLong {
          */
 
         int myMaxIntTest = 2147483647;
+
+        /*
+        * We can see that the range for byte datatype is quite small
+        * We can use this for good code documentation as developers will see it can only have a small range
+        * Occupies 8 bits
+        */
+        byte myMinByteValue = Byte.MIN_VALUE;
+        byte myMaxByteValue = Byte.MAX_VALUE;
+
+        System.out.println("Byte Minimum Value = " + myMinByteValue);
+        System.out.println("Byte Maximum Value = " + myMaxByteValue);
+        
+        // short has a larger range than a bite, smaller range than an int - occupies 16 bits
+        short myMinShortValue = Short.MIN_VALUE;
+        short myMaxShortValue = Short.MAX_VALUE;
+
+        System.out.println("Short Minimum Value = " + myMinShortValue);
+        System.out.println("Short Maximum Value = " + myMaxShortValue);
+        
+        /*
+        * Long values should have an "L" character on the end to signify it is a long
+        * The Long datatype has a width of 64
+        */
+        long myLongValue = 100L;
+
+        long myMinLongValue = Long.MIN_VALUE;
+        long myMaxLongValue = Long.MAX_VALUE;
+
+        System.out.println("Long Minimum Value = " + myMinLongValue);
+        System.out.println("Long Maximum Value = " + myMaxLongValue);
+
+        // Without the L on the end, IntelliJ will give us an error as it is too large to be an int
+        long bigLongLiteralValue = 2147483647234L;
+        System.out.println(bigLongLiteralValue);
     }
 }
