@@ -17,11 +17,31 @@ public class FloatAndDouble {
         System.out.println("Double maximum value = " + myMaxDoubleValue);
 
         // By default, floating point numbers are assumed to doubles, so you need to use 'f' or casting for floats
-        int myIntValue = 5;
-        float myFloatValue = 5.25f; // Use f to make it clear it's a float
+        int myIntValue = 5 / 3;
+        float myFloatValue = 5f / 3f; // Use f to make it clear it's a float
         float myCastedFloatValue = (float) 5.25; // Or you can use casting (not preferred solution)
-        double myDoubleValue = 5d; // Use d to make it clear it's a double
+        double myDoubleValue = 5d / 3d; // Use d to make it clear it's a double
 
-        // Floats are not used much these days so Doubles are the preferred datatype
+        /*
+        * Floats are not used much these days so Doubles are the preferred datatype
+        * Doubles can be processed more quickly by a lot of modern computers
+        * and libraries are written with them in mind instead of the float datatype
+        */
+
+        /*
+        * We see by dividing the values by 2 that the int type cannot handle decimal points
+        * We see by dividing the values by 3 that the float type can only hold 7 decimal places
+        * but the double has more precision and can have 16 decimal places
+         */
+        System.out.println("MyIntValue = " + myIntValue);
+        System.out.println("MyFloatValue = " + myFloatValue);
+        System.out.println("MyDoubleValue = " + myDoubleValue);
+
+        /*===============================================CHALLENGE===========================================*/
+        double numberOfPounds = 1.34582579d;
+        double conversionFactor = 0.45359237d;
+        double numberOfKilograms = numberOfPounds * conversionFactor;
+
+        System.out.println("The number of kilograms is " + numberOfKilograms);
     }
 }
