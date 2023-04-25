@@ -82,5 +82,12 @@ public class Operators {
         if (!isCar) {
             System.out.println("Abbreviated logic for logical NOT isCar evaluated to true");
         }
+
+        // Ternary Operators: condition ? value to assign if condition is true : value to assign if condition is false
+        // isCar = true; // Uncomment to make the if statement below evaluate to true
+        boolean wasCar = isCar ? true : false;
+        if (wasCar) {
+            System.out.println("wasCar is true");
+        }
     }
 }
