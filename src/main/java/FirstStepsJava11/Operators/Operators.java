@@ -63,8 +63,14 @@ public class Operators {
 
         int secondTopScore = 60;
         // Use double & to say logical AND
-        if (topScore > secondTopScore && topScore < 100) {
+        // Use brackets to separate logical conditions and make it easier to read
+        if ((topScore > secondTopScore) && (topScore < 100)) {
             System.out.println("Greater than secondTopScore and less than 100");
+        }
+
+        // You need to use two | characters to get a logical OR
+        if ((topScore > 90) || (secondTopScore <= 90)) {
+            System.out.println("Either or both of the conditions are true");
         }
     }
 }
