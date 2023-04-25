@@ -1,4 +1,4 @@
-package FloatAndDouble;
+package FirstStepsJava11.FloatAndDouble;
 
 public class FloatAndDouble {
     // Float has a width of 32 and Double has a width of 64, they allow us to store decimals

@@ -1,4 +1,4 @@
-package ByteShortIntLong;
+package FirstStepsJava11.ByteShortIntLong;
 
 public class ByteShortIntLong {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Strings;
+package FirstStepsJava11.Strings;
 
 public class Strings {
 

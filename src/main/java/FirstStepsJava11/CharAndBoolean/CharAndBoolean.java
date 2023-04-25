@@ -1,4 +1,4 @@
-package CharAndBoolean;
+package FirstStepsJava11.CharAndBoolean;
 
 public class CharAndBoolean {
 
