@@ -72,5 +72,15 @@ public class Operators {
         if ((topScore > 90) || (secondTopScore <= 90)) {
             System.out.println("Either or both of the conditions are true");
         }
+
+        // Be careful in this case, because isCar can be reassigned to a different boolean value without error
+        boolean isCar = false;
+        if (isCar == true) {
+            System.out.println("This is not supposed to happen");
+        }
+
+        if (!isCar) {
+            System.out.println("Abbreviated logic for logical NOT isCar evaluated to true");
+        }
     }
 }
