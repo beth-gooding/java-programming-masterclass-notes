@@ -27,7 +27,7 @@ public class Operators {
         result = result % 3; // the remainder of (4 % 3) = 1
         System.out.println("4 % 3 = " + result);
 
-        // Operator abbreviations
+        /*==========================================Operator abbreviations============================================*/
         result++; // Same as result = result + 1
         System.out.println("1 + 1 = " + result);
 
@@ -46,5 +46,14 @@ public class Operators {
         result -= 2; // Same as result = result -2
         System.out.println("10 - 2 = " + result);
 
+        /*=============================================Logical Operators==============================================*/
+
+        boolean isAlien = false; // = being used as an assignment operator
+        // == being used as a logical operator
+        if (isAlien == false) {// Don't put a semicolon here as it will interrupt the if then statement
+            System.out.println("It is not an alien!");
+            // Without a code block only the line directly under the if statement will be included
+            System.out.println("And I am scared of aliens");
+        }
     }
 }
