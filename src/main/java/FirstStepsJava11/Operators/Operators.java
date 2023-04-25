@@ -55,5 +55,16 @@ public class Operators {
             // Without a code block only the line directly under the if statement will be included
             System.out.println("And I am scared of aliens");
         }
+
+        int topScore = 80;
+        if (topScore < 100) {
+            System.out.println("You got the high score!");
+        }
+
+        int secondTopScore = 60;
+        // Use double & to say logical AND
+        if (topScore > secondTopScore && topScore < 100) {
+            System.out.println("Greater than secondTopScore and less than 100");
+        }
     }
 }
