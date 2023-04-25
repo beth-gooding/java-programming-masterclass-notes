@@ -89,5 +89,17 @@ public class Operators {
         if (wasCar) {
             System.out.println("wasCar is true");
         }
+
+        /*============================================CHALLENGE EXERCISE==============================================*/
+        double myFirstChallengeDouble = 20.00d;
+        double mySecondChallengeDouble = 80.00d;
+        double myChallengeDoubleTotal = (myFirstChallengeDouble + mySecondChallengeDouble) * 100.00d;
+        double myChallengeRemainder = myChallengeDoubleTotal % 40.00d;
+        boolean isChallengeRemainderZero = (myChallengeRemainder == 0) ? true : false;
+        System.out.println("My value from step 5 is " + isChallengeRemainderZero);
+        if (!isChallengeRemainderZero) {
+            System.out.println("Got some remainder");
+        }
+
     }
 }
