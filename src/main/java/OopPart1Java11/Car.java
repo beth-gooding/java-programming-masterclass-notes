@@ -12,4 +12,21 @@ public class Car {
     private String model;
     private String engine;
     private String colour;
+
+    // Use public methods to access and change the private fields of classes
+    // We use setters for changing field values
+    public void setModel(String model) {
+        String validModel = model.toLowerCase();
+        // We can use setters to validate our information before assigning it to an object
+        if (validModel.equals("sf900") || validModel.equals("rb17")) {
+            this.model = model;
+        } else {
+            this.model = "UNKNOWN";
+        }
+    }
+
+    // We use getters for accessing field values
+    public String getModel() {
+        return this.model;
+    }
 }
