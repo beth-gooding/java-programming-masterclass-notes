@@ -14,7 +14,9 @@ public class Main {
         System.out.println("Redbull model is " + redBull.getModel());
 
         /*=========================================CHALLENGE EXERCISE=================================================*/
-        BankAccount myBankAccount = new BankAccount(); // create new bank account
+        BankAccount myBankAccount = new BankAccount(12345, 0.00, "Jane Smith", "jane.smith@email.com", "07777777777"); // create new bank account
+        // BankAccount myBankAccount = new BankAccount(); // this line demonstrates the default constructor
+        System.out.println("My account number is " + myBankAccount.getAccountNumber());
         myBankAccount.setBalance(100.00); // Set the initial balance
         myBankAccount.depositFunds(50.00); // Deposit money
         myBankAccount.withdrawFunds(100.00); // Withdraw money, should be successful
