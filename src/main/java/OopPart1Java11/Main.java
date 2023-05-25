@@ -12,5 +12,12 @@ public class Main {
         redBull.setModel("RB16b");
         System.out.println("Ferrari model is " + ferrari.getModel());
         System.out.println("Redbull model is " + redBull.getModel());
+
+        /*=========================================CHALLENGE EXERCISE=================================================*/
+        BankAccount myBankAccount = new BankAccount(); // create new bank account
+        myBankAccount.setBalance(100.00); // Set the initial balance
+        myBankAccount.depositFunds(50.00); // Deposit money
+        myBankAccount.withdrawFunds(100.00); // Withdraw money, should be successful
+        myBankAccount.withdrawFunds(100.00); // Withdraw money, should not be successful
     }
 }
