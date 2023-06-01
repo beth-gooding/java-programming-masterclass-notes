@@ -1,5 +1,9 @@
 package OopPart1Java11;
 
+import OopPart1Java11.Classes.BankAccount;
+import OopPart1Java11.Classes.Car;
+import OopPart1Java11.Classes.VipCustomer;
+
 public class Main {
 
     public static void main(String[] args) {

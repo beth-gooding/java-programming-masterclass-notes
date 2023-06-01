@@ -1,4 +1,4 @@
-package OopPart1Java11;
+package OopPart1Java11.Classes;
 
 // Classes should have capital letters to start their names
 // Public access modifier means any other classes have access to this class

@@ -1,4 +1,4 @@
-package OopPart1Java11;
+package OopPart1Java11.Classes;
 
 public class VipCustomer {
     private String name;
