@@ -25,5 +25,14 @@ public class Main {
         // The code below shows that both the default values and those passed to the constructor work
         BankAccount bethsAccount = new BankAccount("Beth", "beth@beth.com", "12345");
         System.out.println(bethsAccount.getAccountNumber() + " name " + bethsAccount.getCustomerName());
+
+        /*======================================CONSTRUCTORS CHALLENGE EXERCISE=======================================*/
+        VipCustomer taylor = new VipCustomer("Taylor Swift", 1000000, "taylor@tswift.com");
+        VipCustomer beth = new VipCustomer("Beth", "beth@beth.com");
+        VipCustomer deirdre = new VipCustomer();
+
+        System.out.println("name: " + taylor.getName() + " credit limit: " + taylor.getCreditLimit());
+        System.out.println("name: " + beth.getName() + " credit limit: " + beth.getCreditLimit());
+        System.out.println("name: " + deirdre.getName() + " credit limit: " + deirdre.getCreditLimit());
     }
 }
