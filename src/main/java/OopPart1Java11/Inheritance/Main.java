@@ -8,5 +8,10 @@ public class Main {
 
         // Dog objects can use the eat method which is inherited from the animal class, where eat is a public method
         dog.eat();
+        dog.walk();
+        dog.run();
+
+        Fish fish = new Fish("Goldfish", 1, 1, 6,2, 3);
+        fish.swim(2);
     }
 }

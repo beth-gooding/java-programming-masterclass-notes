@@ -32,4 +32,30 @@ public class Dog extends Animal {
         // This means call the eat method from the Animal class
         super.eat();
     }
+
+    public void walk() {
+        System.out.println("Dog.walk() called");
+        /*
+        * Using move instead of super.move means that we will use the overridden move method if one has been created
+        * If there isn't an overridden method, we will use the one defined in the super class
+        */
+
+        move(5);
+    }
+
+    public void run() {
+        System.out.println("Dog.run() called");
+        super.move(10); // Don't look in this class, only use the super class' method
+    }
+
+    private void moveLegs(int speed) {
+        System.out.println("Dog.moveLegs() called");
+    }
+
+    @Override
+    public void move(int speed) {
+        System.out.println("Dog.move() called");
+        moveLegs(speed);
+        super.move(speed);
+    }
 }
