@@ -23,6 +23,11 @@ public class BankAccount {
         this.phoneNumber = phoneNumber;
     }
 
+    // A constructor where some fields are set to default values
+    public BankAccount(String customerName, String email, String phoneNumber) {
+        this(99999, 100.55, customerName, email, phoneNumber);
+    }
+
     public int getAccountNumber() {
         return accountNumber;
     }

@@ -21,5 +21,9 @@ public class Main {
         myBankAccount.depositFunds(50.00); // Deposit money
         myBankAccount.withdrawFunds(100.00); // Withdraw money, should be successful
         myBankAccount.withdrawFunds(100.00); // Withdraw money, should not be successful
+
+        // The code below shows that both the default values and those passed to the constructor work
+        BankAccount bethsAccount = new BankAccount("Beth", "beth@beth.com", "12345");
+        System.out.println(bethsAccount.getAccountNumber() + " name " + bethsAccount.getCustomerName());
     }
 }
