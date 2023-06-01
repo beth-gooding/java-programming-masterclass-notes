@@ -1,4 +1,4 @@
-package OopPart1Java11;
+package OopPart1Java11.Classes;
 
 import OopPart1Java11.Classes.BankAccount;
 import OopPart1Java11.Classes.Car;
