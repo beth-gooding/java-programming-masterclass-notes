@@ -12,11 +12,14 @@ public class Main {
         Motherboard theMotherboard = new Motherboard("BJ-200", "ASUS", 4, 6, "v2.44");
 
         PC thePC = new PC(theCase, theMonitor, theMotherboard);
+        thePC.powerUp();
 
         // One way to invoke methods from a class we've used in composition is to use the getter method first
-        thePC.getMonitor().drawPixelAt(1500, 1200, "red");
-        thePC.getMotherboard().loadProgram("Windows 1.0");
-        thePC.getTheCase().pressPowerButton();
+//        thePC.getMonitor().drawPixelAt(1500, 1200, "red");
+//        thePC.getMotherboard().loadProgram("Windows 1.0");
+//        thePC.getTheCase().pressPowerButton();
+
+
     }
 
 }
