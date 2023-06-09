@@ -29,7 +29,7 @@ public class Main {
         printer.fillToner(49);
         System.out.println("Printer is " + printer.getTonerLevel() + "% full of toner");
         printer.printPage(12);
-        printer.isDuplex();
+        printer.printPage(5);
         printer.fillToner(11);
         System.out.println("Printer is " + printer.getTonerLevel() + "% full of toner");
 

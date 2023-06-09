@@ -32,20 +32,17 @@ public class Printer {
         if (newTonerLevel >= 0 && newTonerLevel < 100) {
             this.tonerLevel = newTonerLevel;
         } else {
-            this.tonerLevel = 100;
+            System.out.println("This is too much toner. It will overflow, toner has not been added");
         }
     }
 
     public void printPage(int numberOfPages) {
-        this.numberPagesPrinted += numberOfPages;
-        System.out.println("Just printed " + numberOfPages + " pages. Printed " + numberPagesPrinted + " in total.");
-    }
-
-    public void isDuplex() {
-        if (isDuplex) {
+        int pagesToPrint = numberOfPages;
+        if (this.isDuplex) {
+            pagesToPrint = ((numberOfPages / 2) + (numberOfPages % 2));
             System.out.println("This printer is a duplex");
-        } else {
-            System.out.println("This printer is not a duplex");
         }
+        this.numberPagesPrinted += pagesToPrint;
+        System.out.println("Just printed " + pagesToPrint + " pages. Printed " + numberPagesPrinted + " in total.");
     }
 }
