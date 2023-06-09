@@ -1,37 +1,37 @@
 package OopPart1Java11.Inheritance;
 
 public class Vehicle {
-    private String steering;
-    private double moving;
+    private String currentDirection;
+    private double currentSpeed;
 
-    public String getSteering() {
-        return steering;
+    public String getCurrentDirection() {
+        return currentDirection;
     }
 
-    public void setSteering(String steering) {
-        this.steering = steering;
+    public void setCurrentDirection(String currentDirection) {
+        this.currentDirection = currentDirection;
     }
 
-    public double getMoving() {
-        return moving;
+    public double getCurrentSpeed() {
+        return currentSpeed;
     }
 
-    public void setMoving(double moving) {
-        this.moving = moving;
+    public void setCurrentSpeed(double currentSpeed) {
+        this.currentSpeed = currentSpeed;
     }
 
-    public Vehicle(String steering, double moving) {
-        this.steering = steering;
-        this.moving = moving;
+    public Vehicle(String steering, double currentSpeed) {
+        this.currentDirection = steering;
+        this.currentSpeed = currentSpeed;
     }
 
     public void changeSteering(String direction) {
-        this.setSteering(direction);
-        System.out.println("Vehicle is steering " + this.steering + " now.");
+        this.setCurrentDirection(direction);
+        System.out.println("Vehicle is steering " + this.currentDirection + " now.");
     }
 
     public void changeSpeed(double newSpeed) {
-        this.setMoving(newSpeed);
-        System.out.println("The vehicle is now moving at speed " + this.moving);
+        this.setCurrentSpeed(newSpeed);
+        System.out.println("The vehicle is now moving at speed " + this.currentSpeed);
     }
 }

@@ -1,24 +1,24 @@
 package OopPart1Java11.Inheritance;
 
 public class Car extends Vehicle {
-    private String gear;
+    private String currentGear;
 
-    public String getGear() {
-        return gear;
+    public String getCurrentGear() {
+        return currentGear;
     }
 
-    public void setGear(String gear) {
-        this.gear = gear;
+    public void setCurrentGear(String currentGear) {
+        this.currentGear = currentGear;
     }
 
-    public Car(String steering, double moving, String gear) {
-        super(steering, moving);
-        this.gear = gear;
+    public Car(String currentDirection, double currentSpeed, String currentGear) {
+        super(currentDirection, currentSpeed);
+        this.currentGear = currentGear;
     }
 
     public void changeGear(String newGear) {
-        this.setGear(newGear);
-        System.out.println("The car is now using gear " + this.getGear());
+        this.setCurrentGear(newGear);
+        System.out.println("The car is now using gear " + this.getCurrentGear());
     }
 }
 
