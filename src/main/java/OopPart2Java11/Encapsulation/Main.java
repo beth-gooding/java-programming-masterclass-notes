@@ -24,5 +24,14 @@ public class Main {
         EnhancedPlayer player2 = new EnhancedPlayer("Beth", 50, "Sword");
         System.out.println("Initial health is " + player2.getHealth());
 
+        Printer printer = new Printer(50, 10, true);
+        System.out.println("Printer is " + printer.getTonerLevel() + "% full of toner");
+        printer.fillToner(49);
+        System.out.println("Printer is " + printer.getTonerLevel() + "% full of toner");
+        printer.printPage(12);
+        printer.isDuplex();
+        printer.fillToner(11);
+        System.out.println("Printer is " + printer.getTonerLevel() + "% full of toner");
+
     }
 }
