@@ -13,5 +13,15 @@ public class Main {
 
         Fish fish = new Fish("Goldfish", 1, 1, 6,2, 3);
         fish.swim(2);
+
+        Vehicle vehicle = new Vehicle("straight", 30);
+        Car car = new Car("straight", 35.2, "3");
+        FormulaOne ferrariSixteen = new FormulaOne("straight", 250, "7", "Ferrari");
+
+        vehicle.changeSteering("left");
+        car.changeGear("Reverse");
+        ferrariSixteen.changeSpeed(0);
+        ferrariSixteen.changeGear("Neutral");
+        ferrariSixteen.changeSteering("Broken");
     }
 }
